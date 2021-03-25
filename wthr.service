@@ -1,0 +1,12 @@
+[Unit]
+Description=Sets the MOTD as the weather at the system's current location
+Wants=wthr.timer
+
+[Service]
+Type=simple
+ExecStart=/home/vagrant/bin/weather
+WorkingDirectory=/home/vagrant/bin
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
