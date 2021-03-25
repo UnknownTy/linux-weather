@@ -4,8 +4,8 @@ Wants=wthr.timer
 
 [Service]
 Type=simple
-ExecStart=/home/vagrant/bin/weather
-WorkingDirectory=/home/vagrant/bin
+ExecStart=/home/vagrant/linux-weather/weather
+WorkingDirectory=/home/vagrant/linux-weather
 Restart=on-failure
 
 [Install]
